@@ -11,6 +11,7 @@
     align-content: center;
     text-align: center;
     margin-top: 0vh;
+    margin-bottom: 5vh;
     color: white;
     background-image: url(https://images.unsplash.com/photo-1504214002698-8bdd458f134b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2hhbmElMjBha2FuJTIwY3VsdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
@@ -38,6 +39,7 @@
     font-size: large;
  }
  #contact{
+     margin-top: 5vh;
      background-color: orange;
  }
  #contact h2{
@@ -48,8 +50,11 @@
      padding: 3vh;
  }
  #contact li{
-     padding: 2vh;
-     
+     padding: 2vh;  
+ }
+ footer{
+     text-align: center;
+     background-color: orange;
  }
  
  
