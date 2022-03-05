@@ -37,6 +37,12 @@
     font-weight: bolder;
     font-size: large;
  }
+ #contact{
+     background-color: orange;
+ }
+ #contact h2{
+     margin-top: 3vh;
+ }
  #contact ul{
      list-style-type: none;
      padding: 3vh;
