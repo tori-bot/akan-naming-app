@@ -39,6 +39,11 @@
  }
  #contact ul{
      list-style-type: none;
+     padding: 3vh;
+ }
+ #contact li{
+     padding: 2vh;
+     
  }
  
  
