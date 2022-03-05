@@ -1,7 +1,10 @@
 
     
 
-
+.nav-link{
+    color: white;
+    
+}
 .jumbotron{
     height: 100vh;
     justify-content: center;
@@ -33,6 +36,9 @@
     background-color: orange;
     font-weight: bolder;
     font-size: large;
+ }
+ #contact ul{
+     list-style-type: none;
  }
  
  
