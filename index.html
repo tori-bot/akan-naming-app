@@ -1,132 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan</title>
-    <script src="https://kit.fontawesome.com/887163cf72.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/887163cf72.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#akan">Akan</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#akan">Akan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-</head>
-<body>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="#akan">Akan</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Akan Naming Algorithm</h1>
+        <p class="lead">
+          This is a fun naming app that takes your birth date as input and tells
+          you on which week day you were born and yor corresponding Akan name.
+          Akan naming is a part of the Ghanian culture of child-naming.
+        </p>
+        <h3>Curious already?</h3>
+        <button>Let's go!</button>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        In every African culture it is tradition to name the child immediately
+        after it is born. Most communities have very specific methods of name
+        choosing, mostly revolving around seasons and other natural phenomena.
+        The Akan of Ghana name their children according to the day of the week
+        they were born.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>male names</h2>
+          <ul>
+            <li>Monday:</li>
+            <li>Tuesday:</li>
+            <li>Wednesday:</li>
+            <li>Thursday:</li>
+            <li>Friday</li>
+            <li>Chor</li>
+            <li>Choose your gender</li>
+          </ul>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <h2>Entrance Form</h2>
+          <form>
+            <div class="form-group">
+              <label for="username">Name</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="form-group">
+              <label for="dateofbirth">year of birth</label>
+              <input type="number" class="form-control" id="year" />
+            </div>
+            <p>What is your gender?</p>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">male</label>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">female</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#akan">Akan</a></li>
+            <li><a href="index.html">about</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2>Social media</h2>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/torimakena/"
+                ><i class="fa-brands fa-instagram-square"></i> Instagram</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+            <li>
+              <a href="https://twitter.com/Tori_makena"
+                ><i class="fa-brands fa-twitter-square"></i> Twitter</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#akan">Akan</a>
+            <li>
+              <a href="https://www.linkedin.com/in/victoria-makena-478a411b5/"
+                ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li>
+              <a href="https://github.com/tori-bot"
+                ><i class="fa-brands fa-github-square"></i> Github</a
+              >
             </li>
           </ul>
         </div>
-      </nav>
-    
-
-      <div class="jumbotron jumbotron-fluid">
-        
-        <div class="container">
-
-               <h1 class="display-4">Akan Naming Algorithm</h1>
-               <p class="lead">This is a fun naming app that takes your birth date as input and tells you on which week day you were born and yor corresponding Akan name.
-              Akan naming is a part of the Ghanian culture of child-naming.
-               </p>
-              <h3>Curious already?</h3>
-              <button>Let's go!</button>
-        </div>
+        <div class="col-md-2"></div>
       </div>
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h2>Instructions</h2>
-            <ol>
-              <li>Enter your name</li>
-              <li>Enter your birth date</li>
-              <li>Choose your gender</li>
-              <li>Discover your Akan name</li>
-            </ol>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-5">
-            <form>
-          <div class="form-group">
-            <label for="username">Name</label>
-            <input type="text" class="form-control" id="John">
-          </div>
-          <div class="form-group">
-            <label for="dateofbirth">Date of birth</label>
-            <input type="date" class="form-control" id="date">
-          </div>
-          <p>What is your gender?</p>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">male</label>
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">female</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-          </div>
-        </div>
-        
-      </div>
+    </div>
+    <footer>
+      tori-bot <i class="fa-solid fa-copyright"></i> 2022 Victoria Makena
+    </footer>
 
-
-       
-
-
-      <div id="contact">
-          <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                  <h2>Quick Links</h2>
-                  <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#akan">Akan</a></li>
-                      <li><a href="index.html">about</a></li>
-                      
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h2>Social media</h2>
-                <ul>
-                    <li><a href="https://www.instagram.com/torimakena/"><i class="fa-brands fa-instagram-square"></i>   Instagram</a></li>
-                    <li><a href="https://twitter.com/Tori_makena"><i class="fa-brands fa-twitter-square"></i>   Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/victoria-makena-478a411b5/"><i class="fa-brands fa-linkedin"></i>   LinkedIn</a></li>
-                    <li><a href="https://github.com/tori-bot"><i class="fa-brands fa-github-square"></i>   Github</a></li>
-                    
-                </ul>
-              </div>
-              <div class="col-md-2"></div>
-              
-          </div>
-      </div>
-      <footer>tori-bot <i class="fa-solid fa-copyright"></i> 2022 Victoria Makena</footer>
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
