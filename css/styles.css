@@ -38,8 +38,11 @@
     font-weight: bolder;
     font-size: large;
  }
+ #akan{
+     margin-top: 10vh;
+ }
  #contact{
-     margin-top: 5vh;
+     margin-top: 10vh;
      background-color: orange;
  }
  #contact h2{
