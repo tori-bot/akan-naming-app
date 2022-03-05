@@ -100,7 +100,7 @@
             <li>Sunday: Ama</li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 generator">
           <h2>Entrance Form</h2>
           <form>
             <div class="form-group">
@@ -109,14 +109,22 @@
             </div>
             <div class="form-group">
               <label for="dateofbirth">year of birth</label>
-              <input type="number" class="form-control" id="year" />
+              <input type="number" class="form-control" id="year" value="" required/>
+            </div>
+            <div class="form-group">
+              <label for="dateofbirth">month of birth</label>
+              <input type="number" class="form-control" id="month" value="" min="1" max="12" required/>
+            </div>
+            <div class="form-group">
+              <label for="dateofbirth">day of birth</label>
+              <input type="number" class="form-control" id="day" value="" min="1" max="31" required/>
             </div>
             <p>What is your gender?</p>
             <div class="form-group form-check">
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="exampleCheck1"
+                id="male"
               />
               <label class="form-check-label" for="exampleCheck1">male</label>
             </div>
@@ -124,11 +132,11 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="exampleCheck1"
+                id="female"
               />
               <label class="form-check-label" for="exampleCheck1">female</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit" onclick="getInfo()" value="submit">Submit</button>
           </form>
         </div>
       </div>
