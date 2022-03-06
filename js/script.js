@@ -11,7 +11,7 @@ function getInfo() {
     var gender = radioInfo();
 
     var dayofweek = new Date(year + '/' + month + '/' + day);
-    var siku = daysofweek.getDay();
+    var siku = dayofweek.getDay();
     var Aname = "";
 
     if (gender === 'male')
