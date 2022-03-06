@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/script.js"></script>
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -43,7 +43,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#akan">Akan</a>
+            <a class="nav-link" href="#generator">Akan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -61,7 +61,7 @@
           Akan naming is a part of the Ghanian culture of child-naming.
         </p>
         <h3>Curious already?</h3>
-        <button>Let's go!</button>
+        <a href="#generator"><button>Let's go!</button></a>
       </div>
     </div>
     <div class="container">
@@ -100,13 +100,9 @@
             <li>Sunday: Ama</li>
           </ul>
         </div>
-        <div class="col-md-4 generator">
+        <div id="generator" class="col-md-4 ">
           <h2>Entrance Form</h2>
           <form>
-            <div class="form-group">
-              <label for="username">Name</label>
-              <input type="text" class="form-control" id="username" />
-            </div>
             <div class="form-group">
               <label for="dateofbirth">year of birth</label>
               <input type="number" class="form-control" id="year" value="" required/>
@@ -122,19 +118,19 @@
             <p>What is your gender?</p>
             <div class="form-group form-check">
               <input
-                type="checkbox"
+                type="radio"
                 class="form-check-input"
                 id="male"
               />
-              <label class="form-check-label" for="exampleCheck1">male</label>
+              <label class="form-check-label" for="male">male</label>
             </div>
             <div class="form-group form-check">
               <input
-                type="checkbox"
+                type="radio"
                 class="form-check-input"
                 id="female"
               />
-              <label class="form-check-label" for="exampleCheck1">female</label>
+              <label class="form-check-label" for="female">female</label>
             </div>
             <button type="submit" class="btn btn-primary" id="submit" onclick="getInfo()" value="submit">Submit</button>
           </form>
@@ -195,5 +191,6 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
