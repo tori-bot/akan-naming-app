@@ -4,7 +4,7 @@ A web app that determines your Akan name (Ghanian culture) from your birth date.
 # author
 Victoria Makena
 # live demo
-
+tori-bot.github.io/akan-naming-app/
 # features
 * instructions
 * form
