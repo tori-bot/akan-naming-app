@@ -11,9 +11,17 @@ var gender = radioInfo();
 
 var dayofweek = new Date(year + '/' + month + '/' + day);
 var siku = dayofweek.getDay();
-var name = "";
+var Aname = "";
 
-if gender==='male'
+if (gender === 'male')
+{
+    Aname = male[siku];
+}
+else
+{
+    Aname = female[siku];
+}
+
 
 
 
