@@ -4,6 +4,15 @@ var femalenames = ['akosua', 'adwoa', 'abenaa', 'akua', 'yaa', 'afua', 'ama'];
 var daysofweek=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
 // user interface
+function radioInfo() {
+    var radio = document.getElementsByName('gender');
+    for (var i = 0; i < radio.length; i++) {
+        if (radio[i].checked==true) {
+            var gender = radio[i].value;
+return gender;
+        }
+    }
+}
 function getInfo() {
     var year = parseInt(document.getElementById('year').value);
     var month = parseInt(document.getElementById('month').value);
@@ -12,28 +21,20 @@ function getInfo() {
 
     var dayofweek = new Date(year + '/' + month + '/' + day);
     var siku = dayofweek.getDay();
-    var Aname = "";
+    var name = "";
 
     if (gender === 'male')
     {
-        Aname = male[siku];
+        name = male[siku];
     }
     else
     {
-        Aname = female[siku];
+        name = female[siku];
     }
-    alert('your birthday was on a ' + daysofweek(siku) + 'and your Akan name is ' + Aname);
-     document.getElementById('akan').innerHTML= 'your birthday was on a ' + daysofweek(siku) + 'and your Akan name is ' + Aname;
+    alert('your birthday was on a ' + dayofweek[siku] + ' and your Akan name is ' + name);
+     document.getElementById('akan').innerHTML= 'your birthday was on a ' + dayofweek[siku] + 'and your Akan name is ' + name;
     }
-function radioInfo() {
-    var radio = document.getElementsByName('gender');
-    for (var i = 0; i < radio.length; i++) {
-        if (radio[i].checked == true) {
-            gender = radio[i].value;
-            return gender;
-        }
-    }
-}
+
 
 
 
