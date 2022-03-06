@@ -76,7 +76,7 @@
     </div>
 
     
-    <div id="akan" class="container akan">
+    <div id="akan" class="container">
       <div class="row">
         <div class="col-md-4">
           <h2>Male names</h2>
@@ -102,46 +102,17 @@
             <li>Sunday: Ama</li>
           </ul>
         </div>
-        <div id="generator" class="col-md-4 ">
-          <h2>Entrance Form</h2>
-          <form>
-            <div class="form-group">
-              <label for="dateofbirth">year of birth</label>
-              <input type="number" class="form-control" id="year" value="" required/>
-            </div>
-            <div class="form-group">
-              <label for="dateofbirth">month of birth</label>
-              <input type="number" class="form-control" id="month" value="" min="1" max="12" required/>
-            </div>
-            <div class="form-group">
-              <label for="dateofbirth">day of birth</label>
-              <input type="number" class="form-control" id="day" value="" min="1" max="31" required/>
-            </div>
-            <p>What is your gender?</p>
-            <div class="form-group form-check">
-              <input
-                type="radio"
-                
-                id="male" 
-                name="gender"
-                value="male"
-              />
-              <label class="form-check-label" for="male">male</label>
-            </div>
-            <div class="form-group form-check">
-              <input
-                type="radio"
-                id="female"
-                name="gender"
-                value="female"
-              />
-              <label class="form-check-label" for="female">female</label>
-            </div>
-            <input type="submit" class="btn btn-primary" id="submit" onclick="getInfo()" value="submit">
+
+        <div class="generator">
+          <form  class ="needs-validation" novalidate>
+             <input type="number" id="day" class="form-control" value="" placeholder="Day" min="1" max="31" required ><br>
+             <input type="number" id="month"  value="" placeholder="Month" min="1" max="12" required><br><br>
+             <input type="number" id="year"  value="" placeholder="Year" required><br><br>
+             <input type="radio" id="male"  name="gender" value="male"><strong>Male</strong>
+             <input type="radio" id="female"  name="gender" value="female" ><strong>Female</strong><br><br>
+             <input type="submit" id="submit" class="btn btn-secondary" onclick="getInfo()"  value="Submit">
           </form>
-        </div>
       </div>
-    </div>
 
     <div id="contact">
       <div class="row">

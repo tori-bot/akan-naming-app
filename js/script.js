@@ -1,53 +1,45 @@
-// business logic
-let malenames = ["kwasi", "kwadwo", "kwabena", "kwaku", "yow", "kofi", "kwame"];
-let femalenames = ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
-let week = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
+var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
-// user interface
+var female = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-function getInfo() {
-  let year = parseInt(document.getElementById("year").value);
-  let month = parseInt(document.getElementById("month").value);
-  let day = parseInt(document.getElementById("day").value);
-  let gender = radioInfo();
+var dateWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-  let dayOfWeek = new Date(year + "/" + month + "/" + day);
-  let d = dayOfWeek.getDay();
-  let name = "";
+//userInterface
 
-  if (gender === "male") {
-    name = male[d];
-  } else {
-    name = female[d];
-  }
-  alert(
-    "your birthday was on a " +
-      week[d] +
-      " and your Akan name is " +
-      name
-  );
-  document.getElementById('akan').innerHTML =
-    "your birthday was on a " +
-    week[d] +
-    "and your Akan name is " +
-    name;
-}
-
-function radioInfo() {
-    let radio = document.getElementsByName("gender");
-    // for (let i = 0; i < radio.length; i++)
-    for (let of radio)
-    {
-    if (radio[i].checked === true) {
-      return radio[i].value;
+function getInfo(){
+    var day = parseInt(document.getElementById("day").value);
+    
+    var month = parseInt(document.getElementById("month").value);
+    
+    var year = parseInt(document.getElementById("year").value);
+    
+    var gender = radioInfo();
+    
+    var dayWeek = new Date(year + "/" + month + "/" + day);
+    var d = dayWeek.getDay();
+    var name="" ;
+    if (gender ==="male"){
+       name = male[d];
     }
-  }
+    else{
+       name = female[d];
+    }
+    //concat the day born and the Akan name
+    alert("You were born on "+ dateWeek[d] + " and your Akan name is "+ name);
+document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] +  " and your Akan name is: " + maleNames[d] ;
+}
+function radioInfo (){
+    var radio = document.getElementsByName('gender');
+    for (var i = 0;  i<radio.length; i++)
+    {
+    if (radio[i].checked==true)
+    {
+        // generate output with the checked radio
+
+        gender = radio[i].value;
+        // only one radio can be logically checked
+
+return gender;
+}
+}
 }
