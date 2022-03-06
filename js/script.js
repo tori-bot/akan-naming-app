@@ -1,44 +1,53 @@
 // business logic
-var malenames = ['kwasi', 'kwadwo', 'kwabena', 'kwaku', 'yow', 'kofi', 'kwame'];
-var femalenames = ['akosua', 'adwoa', 'abenaa', 'akua', 'yaa', 'afua', 'ama'];
-var daysofweek=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+let malenames = ["kwasi", "kwadwo", "kwabena", "kwaku", "yow", "kofi", "kwame"];
+let femalenames = ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
+let week = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 
 // user interface
-function radioInfo() {
-    var radio = document.getElementsByName('gender');
-    for (var i = 0; i < radio.length; i++) {
-        if (radio[i].checked==true) {
-            var gender = radio[i].value;
-return gender;
-        }
-    }
-}
+
 function getInfo() {
-    var year = parseInt(document.getElementById('year').value);
-    var month = parseInt(document.getElementById('month').value);
-    var day = parseInt(document.getElementById('day').value);
-    var gender = radioInfo();
+  let year = parseInt(document.getElementById("year").value);
+  let month = parseInt(document.getElementById("month").value);
+  let day = parseInt(document.getElementById("day").value);
+  let gender = radioInfo();
 
-    var dayofweek = new Date(year + '/' + month + '/' + day);
-    var siku = dayofweek.getDay();
-    var name = "";
+  let dayOfWeek = new Date(year + "/" + month + "/" + day);
+  let d = dayOfWeek.getDay();
+  let name = "";
 
-    if (gender === 'male')
+  if (gender === "male") {
+    name = male[d];
+  } else {
+    name = female[d];
+  }
+  alert(
+    "your birthday was on a " +
+      week[d] +
+      " and your Akan name is " +
+      name
+  );
+  document.getElementById('akan').innerHTML =
+    "your birthday was on a " +
+    week[d] +
+    "and your Akan name is " +
+    name;
+}
+
+function radioInfo() {
+    let radio = document.getElementsByName("gender");
+    // for (let i = 0; i < radio.length; i++)
+    for (let of radio)
     {
-        name = male[siku];
+    if (radio[i].checked === true) {
+      return radio[i].value;
     }
-    else
-    {
-        name = female[siku];
-    }
-    alert('your birthday was on a ' + dayofweek[siku] + ' and your Akan name is ' + name);
-     document.getElementById('akan').innerHTML= 'your birthday was on a ' + dayofweek[siku] + 'and your Akan name is ' + name;
-    }
-
-
-
-
-
-
-
-
+  }
+}
