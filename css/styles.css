@@ -43,6 +43,8 @@
  }
  #contact{
      margin-top: 10vh;
+     margin-left: -15vw;
+     margin-right: -15vw;
      background-color: orange;
  }
  #contact h2{
