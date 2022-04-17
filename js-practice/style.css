@@ -1,0 +1,18 @@
+h1{
+    color: red;
+}
+.header{
+    color: blueviolet;
+}
+#practice{
+    color: orange;
+}
+.header button{
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header p{
+    text-align: center;
+}
